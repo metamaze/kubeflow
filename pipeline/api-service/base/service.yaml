@@ -12,3 +12,4 @@ spec:
     port: 8887
     protocol: TCP
     targetPort: 8887
+  type: LoadBalancer
