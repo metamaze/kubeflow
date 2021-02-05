@@ -23,7 +23,7 @@ resources:
   # - ../../pipeline/mysql/installs/generic
   - ../../pipeline/upstream/env/azure
   # - ../../pipeline/installs/generic
-  - ../../argo/base_v3
+  # - ../../argo/base_v3
   # Kubernetes resources - anonymous user
   - ../../default-install/base
   # Metadata
