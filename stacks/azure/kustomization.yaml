@@ -22,7 +22,7 @@ resources:
   # - ../../pipeline/minio/installs/generic
   # - ../../pipeline/mysql/installs/generic
   - ../../pipeline/upstream/env/azure
-  - ../../pipeline/installs/generic
+  # - ../../pipeline/installs/generic
   - ../../argo/base_v3
   # Kubernetes resources - anonymous user
   - ../../default-install/base
