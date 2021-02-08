@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: kubeflow
 
 bases:
-- ../../../../pipeline/minio/installs/generic
+#- ../../../../pipeline/minio/installs/generic
 - ../../../../pipeline/mysql/installs/generic
 - ../../../../pipeline/installs/generic
 - ../../../../argo/base_v3
