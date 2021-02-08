@@ -8,7 +8,7 @@ data:
       "DBConfig": {
         "DriverName": "mysql",
         "DataSourceName": "",
-        "DBName": "mlpipeline",
+        "DBName": "mlmetadata",
         "GroupConcatMaxLen": "4194304"
       },
       "ObjectStoreConfig":{

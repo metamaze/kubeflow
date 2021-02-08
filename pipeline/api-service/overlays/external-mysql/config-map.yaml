@@ -8,7 +8,7 @@ data:
       "DBConfig": {
         "DriverName": "mysql",
         "DataSourceName": "",
-        "DBName": "mlpipeline",
+        "DBName": "mlmetadata",
         "Host": "$(mysqlHost)",
         "User": "$(mysqlUser)",
         "Password": "$(mysqlPassword)"
