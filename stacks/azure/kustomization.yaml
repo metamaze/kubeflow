@@ -19,11 +19,10 @@ resources:
   - ../../mpi-job/mpi-operator/overlays/application
   - ../../katib/installs/katib-standalone
   # Pipeline
-   - ../../pipeline/minio/installs/generic
-   - ../../pipeline/mysql/installs/generic
-  # - ../../pipeline/upstream/env/azure
-   - ../../pipeline/installs/generic
-   - ../../argo/base_v3
+  - ../../pipeline/minio/installs/generic
+  - ../../pipeline/mysql/installs/generic
+  - ../../pipeline/installs/generic
+  - ../../argo/base_v3
   # Kubernetes resources - anonymous user
   - ../../default-install/base
   # Metadata
@@ -31,34 +30,34 @@ resources:
   # Uncomment the line below if you want to use Azure MySQL
   - ./metadata
 configMapGenerator:
-- name: workflow-controller-parameters
-  behavior: merge
-  literals:
-  - containerRuntimeExecutor=pns
-- name: kubeflow-config
-  envs:
-  - ./config/params.env
+  - name: workflow-controller-parameters
+    behavior: merge
+    literals:
+      - containerRuntimeExecutor=pns
+  - name: kubeflow-config
+    envs:
+      - ./config/params.env
 vars:
-# We need to define vars at the top level otherwise we will get
-# conflicts.
-- fieldref:
-    fieldPath: data.clusterDomain
-  name: clusterDomain
-  objref:
-    apiVersion: v1
-    kind: ConfigMap
-    name: kubeflow-config
-- fieldref:
-    fieldPath: metadata.namespace
-  name: namespace
-  objref:
-    apiVersion: v1
-    kind: ConfigMap
-    name: kubeflow-config
-- fieldref:
-    fieldpath: metadata.namespace
-  name: katib-ui-namespace
-  objref:
-    kind: Service
-    name: katib-ui
-    apiVersion: v1
+  # We need to define vars at the top level otherwise we will get
+  # conflicts.
+  - fieldref:
+      fieldPath: data.clusterDomain
+    name: clusterDomain
+    objref:
+      apiVersion: v1
+      kind: ConfigMap
+      name: kubeflow-config
+  - fieldref:
+      fieldPath: metadata.namespace
+    name: namespace
+    objref:
+      apiVersion: v1
+      kind: ConfigMap
+      name: kubeflow-config
+  - fieldref:
+      fieldpath: metadata.namespace
+    name: katib-ui-namespace
+    objref:
+      kind: Service
+      name: katib-ui
+      apiVersion: v1
