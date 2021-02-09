@@ -26,9 +26,9 @@ resources:
   # Kubernetes resources - anonymous user
   - ../../default-install/base
   # Metadata
-  - ../../metadata/v3
+  #- ../../metadata/v3
   # Uncomment the line below if you want to use Azure MySQL
-  # - ./metadata
+  - ./metadata
 configMapGenerator:
 - name: workflow-controller-parameters
   behavior: merge
