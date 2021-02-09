@@ -19,10 +19,11 @@ resources:
   - ../../mpi-job/mpi-operator/overlays/application
   - ../../katib/installs/katib-standalone
   # Pipeline
-  - ../../pipeline/minio/installs/generic
-  - ../../pipeline/mysql/installs/generic
-  - ../../pipeline/installs/generic
-  - ../../argo/base_v3
+  #- ../../pipeline/minio/installs/generic
+  #- ../../pipeline/mysql/installs/generic
+  #- ../../pipeline/installs/generic
+  #- ../../argo/base_v3
+  - ../../pipeline/upstream/env/azure
   # Kubernetes resources - anonymous user
   - ../../default-install/base
   # Metadata
