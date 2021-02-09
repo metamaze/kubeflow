@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
       - name: container
+        image: mysql:8.0.3
+        imagePullPolicy: IfNotPresent
         envFrom:
           - configMapRef:
               name: metadata-db-parameters
