@@ -10,8 +10,7 @@ require (
 	github.com/json-iterator/go v1.1.7 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/spf13/pflag v1.0.5 // indirect
-	golang.org/x/text v0.3.2 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20191120175047-4206685974f2
+	golang.org/x/text v0.3.8 // indirect
 	k8s.io/api v0.0.0 // indirect
 	k8s.io/apimachinery v0.0.0
 	k8s.io/client-go v12.0.0+incompatible // indirect
