@@ -4,14 +4,12 @@ go 1.13
 
 require (
 	github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
-	github.com/gogo/protobuf v1.2.2-0.20190730201129-28a6bbf47e48 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/google/martian v2.1.0+incompatible
 	github.com/json-iterator/go v1.1.7 // indirect
 	github.com/pkg/errors v0.8.1
 	github.com/spf13/pflag v1.0.5 // indirect
-	golang.org/x/text v0.3.2 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20191120175047-4206685974f2
 	k8s.io/api v0.0.0 // indirect
 	k8s.io/apimachinery v0.0.0
 	k8s.io/client-go v12.0.0+incompatible // indirect
